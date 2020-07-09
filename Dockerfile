@@ -16,8 +16,7 @@ WORKDIR /flipfluids/build
 # starting actual build
 RUN cmake .. 
 RUN make
-RUN zip -r flipfluids-blender-addon.zip ./bl_flip_fluids/flip_fluids_addon ./bl_flip_fluids/pyfluid
+RUN zip -r /flipfluids-blender-addon.zip ./bl_flip_fluids/flip_fluids_addon ./bl_flip_fluids/pyfluid
 
-# deploy
-#COPY flipfluids-blender-addon.zip 
-
+# delpoy
+RUN echo "Copy the file from this container from location /flipfluids-blender-addon.zip"
