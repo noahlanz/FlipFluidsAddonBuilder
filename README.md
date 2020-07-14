@@ -1,11 +1,9 @@
 # FlipFluidsAddonBuilder
 
-This project helps building the flipfluid blender addon.
+This project helps building the flipfluid blender addon for Linux. 
 
-The build is done within docker. Start i like this:
+For build consistency, the pipeline is built in Docker. 
 
-'''docker build -t noahsamboa/flipfluidsaddonbuilder .'''
+Run build.sh 
 
-Then copy the addon like this:
-
-'''docker cp noahsamboa/flipfluidsaddonbuilder:/flipfluids-blender-addon.zip ./flipfluids-blender-addon.zip'''
+Windows and MacOs are not supported at this point.
